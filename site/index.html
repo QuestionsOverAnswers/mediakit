@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nate Parker — Technology Strategist · Advisor · Speaker</title>
+  <meta name="description" content="Nate Parker is a technology strategist, organizational architect, advisor, and speaker. West Point graduate, Army Aviation Officer, angel investor. Austin, TX.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">Nate Parker</a>
+    <ul class="nav-links">
+      <li><a href="#bio">Bio</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#speaking">Speaking</a></li>
+      <li><a href="#contact" class="nav-cta">Book a Conversation</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+    <button class="nav-close" id="nav-close" aria-label="Close menu">&times;</button>
+    <a href="#bio">Bio</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#speaking">Speaking</a>
+    <a href="#contact" style="color: var(--green-light)">Book a Conversation</a>
+  </div>
+
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">
+        West Point
+        <span aria-hidden="true">·</span>
+        Army Aviation Officer
+        <span aria-hidden="true">·</span>
+        Data Scientist
+        <span aria-hidden="true">·</span>
+        Angel Investor
+      </p>
+      <h1 class="hero-name">Nate<br>Parker</h1>
+      <p class="hero-tagline">Technology Strategist&nbsp;&nbsp;·&nbsp;&nbsp;Organizational Architect&nbsp;&nbsp;·&nbsp;&nbsp;Advisor</p>
+      <div class="hero-actions">
+        <a href="#expertise" class="btn btn-ghost">View Expertise</a>
+        <a href="#contact" class="btn btn-primary">Book a Conversation</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ===== BIO ===== -->
+  <section id="bio">
+    <div class="section">
+      <div class="section-label">About</div>
+
+      <div class="bio-grid">
+        <!-- Text column -->
+        <div class="bio-text">
+          <h2 class="section-title" style="margin-bottom: 2rem;">Who He Is</h2>
+
+          <p>Nate Parker spent two decades at the frontier of advanced technologies — not as an observer, but as someone who built the organizations, wrote the doctrine, and led the people responsible for making those technologies real. His work sits at the intersection of what is technically possible and what organizations can actually do with it. His particular gift is closing that gap.</p>
+
+          <p>As an Army Aviation Officer and West Point graduate, he was selected to stand up the Army's first Unmanned Aerial Systems Troop — an organization that didn't yet exist, for a mission that had never been executed at scale. He built the team, developed the operational doctrine for Manned-Unmanned Teaming, and deployed that capability into active combat across three tours in Afghanistan. The two Bronze Stars and four Air Medals are a footnote; what those deployments taught him about how organizations adopt new technology — and what it takes for people to perform when the stakes are real — is the curriculum.</p>
+
+          <p>After earning a fully-funded MS in Data Science and publishing peer-reviewed research in natural language processing, he was chosen to architect and lead a first-of-its-kind Data Science organization within a major institutional command — bringing cloud computing, modern software development, and AI into an environment not designed for them, generating outcomes against decisions measured in the multi-billion-dollar range.</p>
+
+          <p>Today, Nate advises founders and leadership teams navigating the challenges of building something genuinely new — particularly at the intersection of advanced technology and meaningful organizational design. His angel portfolio spans applied AI, immersive training technology, sustainable infrastructure, and fintech. He lives in Austin, Texas, with his four children.</p>
+        </div>
+
+        <!-- Slideshow column -->
+        <div class="slideshow" aria-label="Photo gallery">
+          <div class="slideshow-track" id="slideshow">
+            <div class="slide active">
+              <img src="images/PXL_20250702_214354401.jpg" alt="Nate Parker speaking at Capitol Factory, Austin">
+            </div>
+            <div class="slide">
+              <img src="images/PXL_20250702_212814646.jpg" alt="Nate Parker at Army recognition ceremony">
+            </div>
+            <div class="slide">
+              <img src="images/P6300034.JPG" alt="Nate Parker in Afghanistan wearing cavalry Stetson">
+            </div>
+            <div class="slide">
+              <img src="images/IMG_0143.JPG" alt="Nate Parker in Kiowa helicopter cockpit, Afghanistan">
+            </div>
+            <div class="slide">
+              <img src="images/IMG_0157.JPG" alt="Nate Parker with armed Kiowa helicopter, Afghanistan">
+            </div>
+          </div>
+          <div class="slideshow-dots" id="slideshow-dots" role="group" aria-label="Navigate photos">
+            <button class="slideshow-dot active" data-index="0" aria-label="Photo 1 of 5"></button>
+            <button class="slideshow-dot" data-index="1" aria-label="Photo 2 of 5"></button>
+            <button class="slideshow-dot" data-index="2" aria-label="Photo 3 of 5"></button>
+            <button class="slideshow-dot" data-index="3" aria-label="Photo 4 of 5"></button>
+            <button class="slideshow-dot" data-index="4" aria-label="Photo 5 of 5"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Credential strip -->
+      <div class="credentials">
+        <div class="credentials-inner">
+          <span class="credential-item"><strong>West Point</strong>&nbsp;'05</span>
+          <span class="credential-item"><strong>2&times;</strong>&nbsp;Bronze Star</span>
+          <span class="credential-item"><strong>4&times;</strong>&nbsp;Air Medal</span>
+          <span class="credential-item"><strong>3 Tours</strong>&nbsp;Afghanistan</span>
+          <span class="credential-item"><strong>MS</strong>&nbsp;Data Science</span>
+          <span class="credential-item"><strong>Published</strong>&nbsp;NLP Researcher</span>
+          <span class="credential-item"><strong>Active</strong>&nbsp;Angel Investor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ===== EXPERTISE ===== -->
+  <section id="expertise">
+    <div class="expertise-wrap">
+      <div class="section-label">What He Brings</div>
+      <h2 class="section-title">Areas of Expertise</h2>
+      <p class="expertise-intro">A specific and uncommon combination: someone who has actually built organizations on the frontier of advanced technology — not consulted on them, not studied them, but stood them up from nothing and made them perform.</p>
+
+      <div class="expertise-grid">
+
+        <!-- 1 -->
+        <div class="expertise-card" aria-expanded="false" role="button" tabindex="0" aria-label="Building Organizations Around Advanced Technologies — click to expand">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M2.25 21h19.5M3.75 21V6.75A.75.75 0 014.5 6h15a.75.75 0 01.75.75V21M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21M6.75 10.5h1.5M6.75 13.5h1.5M15.75 10.5h1.5M15.75 13.5h1.5M10.5 10.5h3M10.5 13.5h3"/>
+          </svg>
+          <h3 class="card-title">Building Organizations Around Advanced Technologies</h3>
+          <p class="card-teaser">Standing up first-of-kind teams at the technology frontier — from readiness assessment to doctrine to durable performance.</p>
+          <div class="card-expand">
+            <span class="card-expand-icon">+</span>
+            <span>Expand</span>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <p>Has built two first-of-kind organizations at the frontier of emerging technology — one around autonomous aerial systems in combat, one around cloud computing, data science, and AI in a large institutional environment. Understands how to assess organizational readiness, design for capability that doesn't yet exist, sequence the build, and develop the people and culture that make it durable. This is the core of what he brings to founders and leadership teams doing the same.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="expertise-card" aria-expanded="false" role="button" tabindex="0" aria-label="AI Strategy and Applied Data Science — click to expand">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"/>
+          </svg>
+          <h3 class="card-title">AI Strategy &amp; Applied Data Science</h3>
+          <p class="card-teaser">Practitioner-level depth in AI and ML — built and deployed in production environments where outputs shaped real decisions.</p>
+          <div class="card-expand">
+            <span class="card-expand-icon">+</span>
+            <span>Expand</span>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <p>Practitioner-level depth in artificial intelligence, machine learning, and data systems — built and deployed in production environments where the outputs shaped real decisions. Published researcher in natural language processing. Advises leadership teams and investors on AI strategy, capability assessment, vendor and architecture evaluation, and the organizational conditions required for AI to actually deliver value.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="expertise-card" aria-expanded="false" role="button" tabindex="0" aria-label="Doctrine Development and Technology Adoption — click to expand">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
+          </svg>
+          <h3 class="card-title">Doctrine Development &amp; Technology Adoption</h3>
+          <p class="card-teaser">One of the few advisors who has literally written the playbook for how an organization adopts a new technology platform.</p>
+          <div class="card-expand">
+            <span class="card-expand-icon">+</span>
+            <span>Expand</span>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <p>Developed operational doctrine for Manned-Unmanned Teaming that shaped how the Army integrated autonomous systems at scale. That experience translates directly into helping companies think through the frameworks, workflows, and cultural shifts required to move from technology adoption to technology fluency — building the playbook when there is no template to follow.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="expertise-card" aria-expanded="false" role="button" tabindex="0" aria-label="Leadership in Ambiguous High-Stakes Environments — click to expand">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/>
+          </svg>
+          <h3 class="card-title">Leadership in Ambiguous, High-Stakes Environments</h3>
+          <p class="card-teaser">Commanded teams in conditions of genuine uncertainty — in combat, in organizational environments with no precedent.</p>
+          <div class="card-expand">
+            <span class="card-expand-icon">+</span>
+            <span>Expand</span>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <p>Commanded teams across three Afghanistan deployments, in organizational environments with no precedent, and in markets actively forming. Draws on military leadership doctrine — clarity of purpose, decentralized execution, developing people who outperform under pressure — and applies it to the realities of building fast-moving organizations where the stakes are high and the map hasn't been drawn yet.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="expertise-card" aria-expanded="false" role="button" tabindex="0" aria-label="Regenerative Ventures and Purposeful Organization — click to expand">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036"/>
+          </svg>
+          <h3 class="card-title">Regenerative Ventures &amp; Purposeful Organization</h3>
+          <p class="card-teaser">Organizational design that goes beyond optimization — toward ventures that are generative, resilient, and aligned with something larger.</p>
+          <div class="card-expand">
+            <span class="card-expand-icon">+</span>
+            <span>Expand</span>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <p>Brings a perspective on organizational design informed by regenerative thinking, depth work, and serious engagement with community and ecological systems. Advises founders and leadership teams on how to build ventures that create durable value rather than extract it, and how to align culture, structure, and mission in ways that attract the people and capital that want to contribute to that.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="expertise-card" aria-expanded="false" role="button" tabindex="0" aria-label="Startup Advisory Fundraising and Go-to-Market — click to expand">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/>
+          </svg>
+          <h3 class="card-title">Startup Advisory, Fundraising &amp; Go-to-Market</h3>
+          <p class="card-teaser">Both sides of the table — operator who built the company and investor who evaluated the bet.</p>
+          <div class="card-expand">
+            <span class="card-expand-icon">+</span>
+            <span>Expand</span>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+              <p>Advises early- and growth-stage companies on fundraising narrative, technology positioning, go-to-market strategy (including complex enterprise and government markets), organizational design, and the operational discipline required to scale without losing what made the company worth building. Active angel investor with genuine technical and operational depth for evaluating investments.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /expertise-grid -->
+    </div><!-- /expertise-wrap -->
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ===== SPEAKING ===== -->
+  <section id="speaking">
+    <div class="section">
+      <div class="section-label">On Stage</div>
+      <h2 class="section-title">Speaking Topics</h2>
+      <p class="speaking-intro">Available for keynotes, panels, and executive conversations. Each talk draws on direct, practitioner experience — not theory.</p>
+
+      <div class="accordion" id="accordion">
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="panel-1" id="trigger-1">
+            <span class="accordion-number">01</span>
+            <span class="accordion-title">Building What Doesn't Exist Yet</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel" id="panel-1" role="region" aria-labelledby="trigger-1">
+            <div class="accordion-panel-inner">
+              <p class="accordion-subtitle">Organizations &middot; Technology Frontier &middot; First Principles</p>
+              <p>The tactical and organizational playbook for standing up first-of-kind teams at the technology frontier. Drawing on experience building two organizations that had no template — the Army's first UAS Troop and a first-of-kind Data Science organization — this talk deconstructs the specific moves that determine whether a new capability delivers or stalls: how to assess readiness, sequence the build, develop the doctrine, and grow the people who make it durable.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="panel-2" id="trigger-2">
+            <span class="accordion-number">02</span>
+            <span class="accordion-title">AI That Actually Delivers</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel" id="panel-2" role="region" aria-labelledby="trigger-2">
+            <div class="accordion-panel-inner">
+              <p class="accordion-subtitle">AI Strategy &middot; Leadership &middot; Organizational Readiness</p>
+              <p>Most AI strategies fail not because of technology but because of organizational conditions. A practitioner-level framework for leadership teams navigating AI adoption: what separates the organizations that generate real value from the ones that generate slide decks, how to assess your actual readiness, evaluate vendors and architecture, and build the internal conditions that let AI capabilities compound over time.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="panel-3" id="trigger-3">
+            <span class="accordion-number">03</span>
+            <span class="accordion-title">Leading When the Map Isn't Drawn</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel" id="panel-3" role="region" aria-labelledby="trigger-3">
+            <div class="accordion-panel-inner">
+              <p class="accordion-subtitle">Military Leadership &middot; Ambiguity &middot; High Stakes</p>
+              <p>What military leadership doctrine — forged in conditions of genuine uncertainty, decentralized execution, and real stakes — teaches about building fast-moving organizations. A practical translation of principles developed across three combat deployments to the challenges of building companies where the stakes are high and the playbook doesn't yet exist.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="panel-4" id="trigger-4">
+            <span class="accordion-number">04</span>
+            <span class="accordion-title">Writing the Doctrine</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel" id="panel-4" role="region" aria-labelledby="trigger-4">
+            <div class="accordion-panel-inner">
+              <p class="accordion-subtitle">Technology Adoption &middot; Frameworks &middot; Organizational Change</p>
+              <p>One of the most underrated challenges in technology adoption is that someone has to build the playbook. Drawing on experience literally writing the operational doctrine for how the Army integrated autonomous aerial systems at scale, this talk maps the process of moving from technology capability to organizational fluency — the frameworks, workflows, and cultural shifts that determine whether an organization learns to use a new technology or merely acquires it.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="panel-5" id="trigger-5">
+            <span class="accordion-number">05</span>
+            <span class="accordion-title">The Regenerative Turn</span>
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-panel" id="panel-5" role="region" aria-labelledby="trigger-5">
+            <div class="accordion-panel-inner">
+              <p class="accordion-subtitle">Regenerative Design &middot; Purpose &middot; Long-term Value</p>
+              <p>Why the most important technology questions are ultimately human ones. A case for shifting from optimization-and-extraction as the default frame for organizational design to a generative, resilient approach — and what that shift looks like in practice for founders, leadership teams, and investors who want to build something worth building.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /accordion -->
+    </div><!-- /section -->
+  </section>
+
+
+  <!-- ===== PHOTO STRIP ===== -->
+  <div class="photo-strip" aria-hidden="true">
+    <div class="strip-photo">
+      <img src="images/IMG_2916.JPG" alt="">
+      <div class="strip-overlay"></div>
+    </div>
+    <div class="strip-photo">
+      <img src="images/DSCN0662.JPG" alt="">
+      <div class="strip-overlay"></div>
+    </div>
+    <div class="strip-photo">
+      <img src="images/mission-konar.jpg" alt="">
+      <div class="strip-overlay"></div>
+    </div>
+    <div class="strip-photo">
+      <img src="images/kiowa-bosnia.jpg" alt="">
+      <div class="strip-overlay"></div>
+    </div>
+  </div>
+
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="contact-wrap">
+      <div class="contact-left">
+        <div class="section-label">Work Together</div>
+        <h2 class="contact-title">Start a Conversation</h2>
+        <p class="contact-body">Nate works with a select number of founders and leadership teams each year. If you're building something at the frontier — and serious about doing it well — he'd like to hear what you're working on.</p>
+        <a href="mailto:hello@nateparker.com" class="btn btn-primary">Send an Email</a>
+      </div>
+
+      <div class="contact-details">
+        <div>
+          <p class="contact-detail-label">Email</p>
+          <a href="mailto:hello@nateparker.com" class="contact-email">hello@nateparker.com</a>
+        </div>
+        <div>
+          <p class="contact-detail-label">Based in</p>
+          <p class="contact-location">Austin, Texas</p>
+        </div>
+        <div>
+          <p class="contact-detail-label">Available for</p>
+          <p class="contact-availability">Advisory engagements &middot; Speaking &middot; Angel investment conversations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <span class="footer-name">Nate Parker</span>
+    <span class="footer-copy">&copy; 2025 &middot; Austin, Texas</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
