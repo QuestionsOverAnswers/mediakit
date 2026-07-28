@@ -1,0 +1,21 @@
+# This repository is public. Keep drafts, source photos, and local tooling out of it.
+
+# Media kit drafts
+Media_Kit_Draft_*.docx
+~$*.docx
+
+# Source photography and publication art kept in the working folder
+/*.JPG
+/*.jpg
+/*.jpeg
+/*.PNG
+/*.png
+/logos/
+
+# Superseded site build, archived locally
+site/_archive_v3/
+
+# Local tooling
+.claude/
+.DS_Store
+Thumbs.db
