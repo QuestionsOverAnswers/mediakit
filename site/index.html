@@ -51,7 +51,7 @@ a{color:inherit;text-decoration:none}
 .hero-inner{position:relative;width:100%;max-width:var(--max);margin:0 auto}
 .hero-rule{width:52px;height:1px;background:var(--accent);margin-bottom:30px}
 .hero-name{font-family:var(--display);font-weight:300;font-size:clamp(3.1rem,10vw,7rem);line-height:.95;letter-spacing:-.02em}
-.hero-desc{margin-top:26px;font-size:clamp(.7rem,1.5vw,.82rem);letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:400}
+.hero-desc{margin-top:26px;display:flex;flex-wrap:wrap;align-items:baseline;font-size:clamp(.7rem,1.5vw,.82rem);letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:400}
 .hero-desc span{white-space:nowrap}
 .hero-desc i{font-style:normal;color:var(--accent-dim);margin:0 .55em}
 .hero-line{margin-top:30px;max-width:56ch;font-size:clamp(1rem,1.9vw,1.16rem);color:#C6CDD8;line-height:1.65}
@@ -72,12 +72,16 @@ section{padding:var(--pad) var(--gutter)}
 .bio-body p:last-child{margin-bottom:0}
 .bio-body .lead{font-size:clamp(1.12rem,2.1vw,1.34rem);color:var(--text);font-weight:300;line-height:1.6}
 .bio-body .turn{border-left:2px solid var(--accent-dim);padding-left:26px;color:#D5DBE4}
-@media(max-width:860px){.bio-grid{grid-template-columns:1fr}.bio-head{position:static}}
+.bio-portrait{margin-top:34px;width:100%;max-width:268px;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 16%;
+  filter:grayscale(.32) contrast(1.04) drop-shadow(0 12px 32px rgba(0,0,0,.55));
+  -webkit-mask-image:radial-gradient(116% 124% at 50% 42%,#000 66%,rgba(0,0,0,0) 100%);
+  mask-image:radial-gradient(116% 124% at 50% 42%,#000 66%,rgba(0,0,0,0) 100%)}
+@media(max-width:860px){.bio-grid{grid-template-columns:1fr}.bio-head{position:static}.bio-portrait{max-width:220px}}
 
 /* ---------- expertise ---------- */
 #expertise{background:var(--surface);border-top:1px solid var(--rule)}
 .exp-intro{max-width:62ch;margin-top:24px;color:var(--muted);font-size:1.05rem}
-.exp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:1px;background:var(--rule);margin-top:56px;border:1px solid var(--rule)}
+.exp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(310px,100%),1fr));gap:1px;background:var(--rule);margin-top:56px;border:1px solid var(--rule)}
 .exp-card{background:var(--surface);padding:clamp(26px,3vw,38px);position:relative;transition:background .3s ease}
 .exp-card:hover{background:var(--surface-2)}
 .exp-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--accent);transform:scaleY(0);transform-origin:top;transition:transform .4s cubic-bezier(.2,.7,.3,1)}
@@ -150,17 +154,18 @@ footer{padding:34px var(--gutter);background:var(--ground);border-top:1px solid 
     <div class="bio-head rv">
       <p class="label">Biography</p>
       <h2 class="h2">Who He Is</h2>
+      <img class="bio-portrait" src="images/nate-portrait.jpg" alt="Nate Parker" width="1000" height="1333" loading="lazy">
     </div>
     <div class="bio-body rv">
       <p class="lead">Nate Parker advises founders, executives, and investors building at the edge of what technology and capital can do — and people reckoning with what happens after they have built it.</p>
 
       <p>He spent twenty years in the Army and twice was selected to lead an organization that did not yet exist. The first was when the Army needed to bring Unmanned Aerial Systems into its existing Aviation formations. Nate was selected to build the first unit of its kind while simultaneously writing the tactics they would employ in combat. Across three tours in Afghanistan, he flew more than 200 combat missions and was awarded two Bronze Stars and four Air Medals.</p>
 
-      <p>The second was the first data science organization within Army Futures Command, which he was selected to design, build, and lead. He grew the team from three people to over eighty while helping lead the Army's initial move toward cloud adoption and modern software development practices. He put AI systems into production that supported the prioritization of multi-billion-dollar investments in the Army's modernization portfolio. The harder problem was never the tech. It was a century-old institution that wanted to know why and would not act on an output it could not interrogate.</p>
+      <p>The second was the first data science organization within Army Futures Command, which he was selected to design, build, and lead. He grew the team from three people to over eighty while helping lead the Army's initial move toward cloud adoption and modern software development practices. He put AI systems into production that supported the prioritization of multi-billion-dollar investments in the Army's modernization portfolio. The technology was the easy part. The hard part was a century-old institution that wanted to know why and would not act on an output it could not interrogate.</p>
 
       <p>Since leaving the Army he has stayed on the operating side of advanced technology — building the operations team at Aeon Industries as they made the leap from prototype to product, then owning strategic accounts at a Fortune 15 company, selling AI and cloud into the same Army modernization problems he spent a decade being the customer for.</p>
 
-      <p class="turn">The career kept working. The foundation under it was cracking. What followed was not a course of study. It was inspection — pulling apart every answer he had been handed and never checked. Some of them came from West Point, more from the Army, and the rest from further back than that. He had been running on all of it without once asking who wrote it. He had spent a career building methods that senior leaders could interrogate before they acted on them. He had never turned that on himself. He did not come out of it with certainty. He came out with better questions, and the discipline to keep asking them while still deciding and still building.</p>
+      <p class="turn">The career kept working. The foundation under it was cracking. What followed was an inspection — he pulled apart every answer he had been handed and never checked. Some of them came from West Point, more from the Army, and the rest from further back than that. He had been running on all of it without once asking who wrote it. He had spent a career building methods that senior leaders could interrogate before they acted on them. He had never turned that on himself. He came out with better questions instead of certainty, and the discipline to keep asking them while still deciding and still building.</p>
 
       <p>Today he advises founders and leadership teams in advanced technology, works with Dominey Drew at Beyond Wealth, and invests privately in applied AI and sustainable infrastructure. He lives in Austin, Texas, with his four children.</p>
     </div>
@@ -173,7 +178,7 @@ footer{padding:34px var(--gutter);background:var(--ground);border-top:1px solid 
     <div class="rv">
       <p class="label">Areas of Expertise</p>
       <h2 class="h2">What He Is Hired For</h2>
-      <p class="exp-intro">Nate has built organizations on the frontier of advanced technology rather than consulted on them, and he knows how people and institutions actually change.</p>
+      <p class="exp-intro">Nate has built organizations on the frontier of advanced technology, from the inside as an operator, and he knows how people and institutions actually change.</p>
     </div>
 
     <div class="exp-grid">
